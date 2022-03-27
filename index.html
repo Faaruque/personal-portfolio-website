@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+
+    <!-- bootstrap css link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- bootstrap icon link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+
+    <!-- OwlCarousel2 css cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
+    <!-- aos animation css cdn link  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- custom css link here  -->
+    <link rel="stylesheet" href="./public/css/style.min.css" />
+  </head>
+  <body>
+    <!-- header-section start here  -->
+    <div id="header">
+      <nav class="navbar navbar-expand-lg navbar-light navBar">
+        <div class="container">
+          <div class="logo">
+            <a href="#">Harleen<span>due</span></a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span id="header-btn" class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0 menu">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#About">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Teams">Teams</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- header-section end here  -->
+
+    <!-- hero-aria start here  -->
+    <div id="hero-aria">
+      <div class="container d-flex">
+        <div class="row">
+          <div class="hero-aria-content">
+            <div class="text-1 mt-4">Hello, my name is</div>
+            <div class="text-2">Lorem.</div>
+            <div class="text-3">I'm a <span class="typing"></span></div>
+            <a
+              class="my-5"
+              href="https://www.freelancer.com.bd/u/Faruque99"
+              target="_blank"
+              >Hire me</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- hero-aria end here  -->
+
+    <!-- bottom to top scroll button  -->
+    <button id="scrollTop">
+      <i class="bi bi-arrow-up-short"></i>
+    </button>
+
+    <!-- about section start -->
+    <section id="About" data-aos="fade-up">
+      <div class="container">
+        <h2 class="title">About Me</h2>
+        <div class="row">
+          <div class="col-md-5 about-left-box" data-aos="fade-right">
+            <img
+              class="img-fluid img-thumbnail"
+              src="https://img.freepik.com/free-photo/portrait-pensive-young-girl-making-notes_171337-1646.jpg?t=st=1648228711~exp=1648229311~hmac=8769e4c397cae197336b14af8802d1f7efbb1e0c8e081a0cbd394b9e84b14e4d&w=740"
+              alt="image"
+            />
+          </div>
+          <div class="col-md-7 about-right-box" data-aos="fade-right">
+            <div class="text">
+              I'm Faruque and I'm a <span class="typing-2"></span>
+            </div>
+            <p>
+              Friendly and professional customer service specialist with
+              extensive experience resolving escalated customer complaints and
+              issues. Strong interpersonal skills proven through customer
+              satisfaction and peer recognition awards. Creative problem solver
+              who built a new customer retention program that increased customer
+              loyalty by 20%. Seeking a position as a customer service team
+              supervisor to continue career growth into management.
+            </p>
+            <a href="#">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section end -->
+
+    <!-- services section start -->
+    <section id="Services">
+      <div class="container">
+        <h2 class="title text-white">My Services</h2>
+        <div class="row">
+          <div class="col-sm-12 col-md-4 my-3" data-aos="fade-right">
+            <div class="services-area-wapper d-flex align-self-stretch">
+              <div class="single-box-content px-4">
+                <div class="box-icon">
+                  <i class="bi bi-globe"></i>
+                </div>
+                <div class="text my-3">Web Design</div>
+                <p class="text-center">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem
+                  quia sunt, quasi quo illo enim.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 my-3" data-aos="fade-up">
+            <div class="services-area-wapper d-flex align-self-stretch">
+              <div class="single-box-content">
+                <div class="box-icon">
+                  <i class="bi bi-badge-ad"></i>
+                </div>
+                <div class="text my-3">Advertising</div>
+                <p class="text-center">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem
+                  quia sunt, quasi quo illo enim.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 my-3" data-aos="fade-right">
+            <div class="services-area-wapper d-flex align-self-stretch">
+              <div class="single-box-content">
+                <div class="box-icon">
+                  <i class="bi bi-easel"></i>
+                </div>
+                <div class="text my-3">Apps Design</div>
+                <p class="text-center">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem
+                  quia sunt, quasi quo illo enim.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services section end -->
+
+    <!-- fortfolio section start -->
+    <section id="Portfolio">
+      <div class="container">
+        <h2 class="title">Portfolio</h2>
+        <div class="row card card-body">
+          <div class="col-sm-12 col-md-3 my-3" data-aos="zoom-in-right">
+            <div class="portfolio-area-wapper d-flex align-self-stretch">
+              <img
+                src="https://img.freepik.com/free-psd/business-company-landing-page-template_23-2148924995.jpg?w=826&t=st=1648243228~exp=1648243828~hmac=3911f099a7e641c76d058ea6fb6132e344a454732a8227d9739e914a0ebe0318"
+                alt="image"
+              />
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 my-3" data-aos="zoom-in-right">
+            <div class="portfolio-area-wapper d-flex align-self-stretch">
+              <img
+                src="https://img.freepik.com/free-psd/american-food-website-app-template_23-2148477329.jpg?w=996&t=st=1648242161~exp=1648242761~hmac=6ae87db9b3ebad358604e7c834de449fb68356f5b18ef8a2767c10f572990d2f"
+                alt="image"
+              />
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 my-3" data-aos="zoom-in-right">
+            <div class="portfolio-area-wapper d-flex align-self-stretch">
+              <img
+                src="https://img.freepik.com/free-psd/various-web-printable-templates-with-screen_23-2148450117.jpg?w=996&t=st=1648242260~exp=1648242860~hmac=4af66dcccd8d67f8d197e9a14c2dd2605a678913511e3d4a280aebafba480583"
+                alt="image"
+              />
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 my-3" data-aos="zoom-in-right">
+            <div class="portfolio-area-wapper d-flex align-self-stretch">
+              <img
+                src="https://img.freepik.com/free-psd/veterinary-landing-pages-concept_23-2148451973.jpg?w=996&t=st=1648242330~exp=1648242930~hmac=b6151a1c0ef33c873bd1445c0f81b9f28ebb2d18e68f9fb86ce970bd30c9131c"
+                alt="image"
+              />
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 my-3" data-aos="zoom-in-right">
+            <div class="portfolio-area-wapper d-flex align-self-stretch">
+              <img
+                src="https://img.freepik.com/free-psd/technology-landing-page_23-2148900142.jpg?w=826&t=st=1648242356~exp=1648242956~hmac=e8d939d05bd5e27a3ead9ce4a42c72920d85088c7b4bf28ad6f2cbb415441d6c"
+                alt="image"
+              />
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 my-3" data-aos="zoom-in-right">
+            <div class="portfolio-area-wapper d-flex align-self-stretch">
+              <img
+                src="https://img.freepik.com/free-vector/web-design-landing-page-template_52683-18357.jpg?w=740&t=st=1648243342~exp=1648243942~hmac=f5bd7156d6a1307f3569da36295460625dc0f1258359a3c10994c2afb948ae9a"
+                alt="image"
+              />
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 my-3" data-aos="zoom-in-right">
+            <div class="portfolio-area-wapper d-flex align-self-stretch">
+              <img
+                src="https://img.freepik.com/free-psd/ee-learning-concept-banner-template_23-2148688189.jpg?w=826&t=st=1648242432~exp=1648243032~hmac=14b113977916e61178f2ec482b733d02a64a0ce7451361a4ee10f6070b36695c"
+                alt="image"
+              />
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 my-3" data-aos="zoom-in-right">
+            <div class="portfolio-area-wapper d-flex align-self-stretch">
+              <img
+                src="https://img.freepik.com/free-psd/business-company-landing-page-template_23-2148924994.jpg?w=826&t=st=1648242460~exp=1648243060~hmac=022055548a3e385c28418fd20957c9045ca0ce1782464a1b43f72d65ec053893"
+                alt="image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fortfolio section end -->
+
+    <!-- teams section start -->
+    <section id="Teams">
+      <div class="container">
+        <h2 class="title">My Teams</h2>
+        <div class="row teams-area-wapper owl-carousel">
+          <div class="teams-area-box" data-aos="fade-right">
+            <div class="teams-area-single-box">
+              <img
+                src="https://images.unsplash.com/photo-1485043433441-db091a258e5a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                alt=""
+              />
+              <div class="text">Carrie Collins</div>
+              <p>Production Manager</p>
+              <div class="teams-box-icon my-3">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="teams-area-box" data-aos="fade-left">
+            <div class="teams-area-single-box">
+              <img src="./public/images/profile-2.jpeg" alt="" />
+              <div class="text">Jayson Tromp</div>
+              <p>Full Stack WebDevloper</p>
+              <div class="teams-box-icon my-3">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="teams-area-box" data-aos="fade-up">
+            <div class="teams-area-single-box">
+              <img src="./public/images/profile-3.jpeg" alt="" />
+              <div class="text">Lura Steuber</div>
+              <p>Graphis Designer</p>
+              <div class="teams-box-icon my-3">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="teams-area-box" data-aos="fade-right">
+            <div class="teams-area-single-box">
+              <img src="./public/images/profile-4.jpeg" alt="" />
+              <div class="text">Gideon West</div>
+              <p>Backend Developer</p>
+              <div class="teams-box-icon my-3">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="teams-area-box" data-aos="fade-up">
+            <div class="teams-area-single-box">
+              <img
+                src="https://images.unsplash.com/photo-1600275669439-14e40452d20b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                alt=""
+              />
+              <div class="text">Isabel Jacobson</div>
+              <p>Frontend Developer</p>
+              <div class="teams-box-icon my-3">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="teams-area-box" data-aos="fade-left">
+            <div class="teams-area-single-box">
+              <img
+                src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
+                alt=""
+              />
+              <div class="text">Omari Maggio</div>
+              <p>UX & UI Designer</p>
+              <div class="teams-box-icon my-3">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- teams section end -->
+
+    <!-- contact section start -->
+    <section id="Contact">
+      <div class="container">
+        <h2 class="title">Contact Us</h2>
+        <div class="row contact-box-wapper">
+          <div class="col-md-6 contact-left-box" data-aos="fade-right">
+            <div class="contact-left-box-content card card-body">
+              <h2 class="text">Get In Touch</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos harum corporis fuga corrupti. Doloribus quis soluta
+                nesciunt veritatis vitae nobis?
+              </p>
+              <div class="contact-left-box-info">
+                <div class="content-info-icon">
+                  <i class="bi bi-person-circle"></i>
+                </div>
+                <div class="content-info-text">
+                  <h4>Name</h4>
+                  <p>MR.X</p>
+                </div>
+              </div>
+              <div class="contact-left-box-info">
+                <div class="content-info-icon">
+                  <i class="bi bi-envelope-fill"></i>
+                </div>
+                <div class="content-info-text">
+                  <h4>Email</h4>
+                  <p>Example@gmail.com</p>
+                </div>
+              </div>
+              <div class="contact-left-box-info">
+                <div class="content-info-icon">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="content-info-text">
+                  <h4>Address</h4>
+                  <p>Dhaka, Bangladesh</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 contact-right-box" data-aos="fade-right">
+            <div class="contact-right-box-content card card-body">
+              <h2 class="text">Message Me</h2>
+              <form action="#">
+                <div class="contact-field d-flex justify-content-between">
+                  <div class="field name">
+                    <input type="text" placeholder="Name" required />
+                  </div>
+                  <div class="field email">
+                    <input type="email" placeholder="Email" required />
+                  </div>
+                </div>
+                <div class="contact-field">
+                  <input type="text" placeholder="Subject" required />
+                </div>
+                <div class="contact-field textarea">
+                  <textarea
+                    cols="30"
+                    rows="10"
+                    placeholder="Message.."
+                    required
+                  ></textarea>
+                </div>
+                <div class="button">
+                  <button type="submit">Send message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section start -->
+
+    <!-- footer section start -->
+    <footer id="Footer">
+      <div class="container">
+        <div class="row">
+          <p class="py-3 m-0 text-center text-white">
+            <span>&copy;</span> Copyright 2022 All Rights Reserved by |
+            <a
+              href="https://www.facebook.com/md.faruque.hossain.220"
+              target="_blank"
+            >
+              Faauque
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section end -->
+
+    <!-- jQuray import here -->
+    <script src="./public/lib/jquery-3.6.0.min.js"></script>
+
+    <!-- OwlCarousel2 js cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- bootstrap js link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- typed script js cdn link here  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+    <!-- smooth scroll js cdn link here  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <!-- aos animation js cdn link  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- custom js import here -->
+    <script src="./public/script/index.js"></script>
+  </body>
+</html>

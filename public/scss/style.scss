@@ -1,0 +1,546 @@
+@import "./partials/default";
+
+// header-section css-start here
+#header {
+  .sticky {
+    background: $primary-color;
+    .logo {
+      a {
+        color: $white-color !important;
+      }
+    }
+    .menu {
+      li {
+        a {
+          transition: color 0.5s ease;
+          &:hover {
+            color: rgb(211, 214, 39) !important;
+          }
+        }
+      }
+    }
+  }
+  .navBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem 0;
+    font-family: $font;
+    transition: all 0.5s ease;
+    z-index: 999;
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 400;
+      a {
+        transition: 0.5s ease;
+        color: $primary-color;
+      }
+      span {
+        color: $white-color;
+        transition: all 0.5s ease;
+      }
+    }
+    .header-btn {
+      background: $primary-color;
+      color: $white-color;
+      border: 1px solid #333;
+      span {
+        outline: none;
+      }
+    }
+    .menu {
+      li {
+        a {
+          display: block;
+          color: $white-color;
+          font-size: 1rem;
+          font-weight: 500;
+          margin-left: 1.1rem;
+          transition: color 0.5s ease;
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+// header-section css-end here
+
+// hero-aria css-stard here
+#hero-aria {
+  position: relative;
+  display: flex;
+  background: url("https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80");
+  background-color: #61409288;
+  color: $white-color;
+  width: 100%;
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: color;
+  .hero-aria-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    a {
+      font-size: 1.5rem;
+      @include btn;
+      transition: all all 0.5s ease;
+      &:hover {
+        color: $primary-color;
+        background: none;
+      }
+    }
+    .text-1 {
+      font-size: 1.8rem;
+    }
+    .text-2 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-left: -3px;
+    }
+    .text-3 {
+      font-size: 2.2rem;
+      margin: 0.5rem 0;
+    }
+    .text-3 span {
+      color: $primary-color;
+      font-weight: 500;
+    }
+  }
+}
+// hero-aria css-end here
+
+/* bottom to top scroll button css here  */
+#scrollTop {
+  position: fixed;
+  background: $primary-color;
+  color: $white-color;
+  font-size: 22px;
+  right: 0.8rem;
+  bottom: 0.8rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 999;
+  &:active {
+    background: $dark-color;
+  }
+}
+// about-section css-start here
+#About {
+  background: $gray-color;
+  .title {
+    &::after {
+      background: $gray-color;
+      content: "who am i";
+    }
+  }
+  .about-left-box {
+    img {
+      @include image(400px, 380px);
+      object-fit: cover;
+      border: 2px solid $primary-color;
+      border-radius: 50%;
+    }
+  }
+  .about-right-box {
+    .text {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+      span {
+        color: $primary-color;
+      }
+    }
+    p {
+      text-align: justify;
+    }
+    a {
+      display: inline-block;
+      font-size: 1.5rem;
+      margin-top: 20px;
+      @include btn;
+      &:hover {
+        color: $primary-color;
+        background: none;
+      }
+    }
+  }
+}
+// about-section css-end here
+
+// services-section css-start here
+#Services {
+  background: $dark-color;
+  .title {
+    &::after {
+      background: $dark-color;
+      content: "what i provide";
+    }
+  }
+  .title {
+    &::before {
+      background: $white-color;
+    }
+  }
+  .services-area-wapper {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    .single-box-content {
+      border: 1px solid $white-color;
+      padding: 1rem;
+      background: $white-color;
+      border-radius: 0.8rem;
+      cursor: pointer;
+      transition: all 0.5s ease;
+      overflow: hidden;
+      &:hover {
+        background: $primary-color;
+        transform: scale(1.05);
+        .box-icon {
+          i {
+            background: $white-color;
+            color: $dark-color;
+            transition: all 0.5s ease;
+          }
+        }
+        .text {
+          color: $white-color;
+        }
+        p {
+          color: $white-color;
+        }
+      }
+      .box-icon {
+        display: flex;
+        justify-content: center;
+        i {
+          font-size: 1.1rem;
+          padding: 0.8rem 1rem;
+          background: $primary-color;
+          color: $white-color;
+          border: 3px solid $primary-color;
+          border-radius: 50%;
+        }
+      }
+      .text {
+        font-size: 1.5rem;
+        text-align: center;
+        transition: all 0.5s ease;
+      }
+      p {
+        transition: all 0.5s ease;
+      }
+    }
+  }
+}
+// services-section css-end here
+
+// fortfolio section css-start
+#Portfolio {
+  background: #f3f3f3;
+  .title::after {
+    content: "latest project";
+    background: #f3f3f3;
+  }
+  .card {
+    flex-direction: row;
+    .portfolio-area-wapper {
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      cursor: pointer;
+      transition: 1s;
+      overflow: hidden;
+      img {
+        @include image(100%, 28vh);
+      }
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+// fortfolio section css-end
+
+// teams section css-start
+#Teams {
+  background: $dark-color;
+  .title {
+    color: $white-color;
+    &::after {
+      background: $dark-color;
+      content: "meet my teams";
+    }
+  }
+  .title {
+    &::before {
+      background: $white-color;
+    }
+  }
+  .teams-area-wapper {
+    .owl-dots {
+      text-align: center;
+      margin-top: 20px;
+      .owl-dot {
+        height: 0.9rem;
+        width: 0.9rem;
+        margin: 0 0.5rem;
+        outline: none !important;
+        border-radius: 50%;
+        border: 2px solid $primary-color !important;
+        transition: all 0.3s ease;
+        &.active {
+          width: 35px;
+          border-radius: 14px;
+        }
+        &.active,
+        &:hover {
+          background: $primary-color !important;
+        }
+      }
+    }
+    .teams-area-box {
+      padding: 1rem;
+      text-align: center;
+      overflow: hidden;
+      .teams-area-single-box {
+        background: $white-color;
+        border: 1px solid $dark-color;
+        border-radius: 0.8rem;
+        height: 350px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease;
+        img {
+          @include image(150px, 150px);
+          object-fit: cover;
+          border-radius: 50%;
+          border: 5px solid $primary-color;
+          transition: all 0.5s ease;
+        }
+        .text {
+          font-size: 25px;
+          font-weight: 500;
+          margin: 10px 0 7px 0;
+          transition: all 0.5s ease;
+        }
+        p {
+          font-size: 1.2rem;
+          font-weight: 400;
+          transition: all 0.5s ease;
+        }
+        .teams-box-icon {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: all 0.5s ease;
+          i {
+            background: $primary-color;
+            margin: 0 0.2rem;
+            color: #ddd;
+            padding: 0.6rem 0.8rem;
+            border: 1px solid $white-color;
+            border-radius: 100%;
+            transition: all 0.5s ease;
+            &:hover {
+              background: $white-color;
+              color: $primary-color;
+            }
+          }
+        }
+      }
+      &:hover .teams-area-single-box {
+        background: $primary-color;
+        transform: scale(1.05);
+        .text {
+          color: $white-color;
+        }
+        p {
+          color: $white-color;
+        }
+      }
+    }
+  }
+}
+// teams section css-end
+
+// contact section css-start
+#Contact {
+  background: #f3f3f3;
+  .title {
+    color: $dark-color;
+    &::after {
+      background: #f3f3f3;
+      content: "get in touch";
+    }
+  }
+  .contact-box-wapper {
+    .contact-left-box {
+      padding: 0.7rem;
+      .contact-left-box-content {
+        padding: 2rem;
+        .text {
+          font-size: 1.5rem;
+          color: $dark-color;
+          text-align: center;
+        }
+        p {
+          text-align: center;
+        }
+        .contact-left-box-info {
+          display: flex;
+          align-items: center;
+          .content-info-icon {
+            i {
+              margin-right: 0.8rem;
+              font-size: 1.7rem;
+              color: $primary-color;
+            }
+          }
+          .content-info-text {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 1rem;
+            h4 {
+              font-size: 1.2rem;
+              margin-bottom: 0;
+            }
+            p {
+              font-size: 1.1rem;
+            }
+          }
+        }
+      }
+    }
+    .contact-right-box {
+      padding: 0.7rem;
+      .contact-right-box-content {
+        padding: 2rem;
+        .text {
+          font-size: 1.5rem;
+          color: $dark-color;
+          text-align: center;
+          margin-bottom: 2rem;
+        }
+        .contact-field {
+          .field {
+            justify-content: space-between;
+          }
+          input {
+            height: 2.8rem;
+            width: 100%;
+            margin-bottom: 15px;
+          }
+          textarea {
+            height: 6.2rem !important;
+          }
+          input,
+          textarea {
+            width: 100%;
+            border: 1px solid #f3f3f3;
+            border-radius: 0.5rem;
+            outline: none;
+            padding: 0 1rem;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            &:focus {
+              border-color: #b3b3b3;
+            }
+          }
+        }
+        .button {
+          button {
+            @include btn;
+            margin: 1rem 0;
+            transition: 0.5s ease;
+            &:hover {
+              background: none;
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// contact section css-end
+
+// footer section css-srart
+#Footer {
+  background: $primary-color;
+  span {
+    font-size: 1.2rem !important;
+  }
+  a {
+    color: $dark-color;
+    font-size: 1.2rem !important;
+    transition: 0.5s ease;
+    &:hover {
+      color: $white-color;
+    }
+  }
+}
+// footer section css-end
+
+// media-queries responsive
+@media (max-width: 576px) {
+  .navBar {
+    background: $primary-color;
+    .logo {
+      a {
+        color: $white-color !important;
+      }
+    }
+  }
+  #About {
+    .about-left-box {
+      img {
+        @include image(400px, 300px);
+      }
+    }
+    .about-right-box {
+      .text {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 0.8rem;
+      }
+    }
+  }
+  #hero-aria {
+    .hero-aria-content {
+      .text-2 {
+        font-size: 2.5rem;
+        font-weight: 600;
+      }
+      .text-3 span {
+        font-size: 1.8rem;
+        color: $primary-color;
+        font-weight: 500;
+      }
+    }
+  }
+  #Footer {
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}

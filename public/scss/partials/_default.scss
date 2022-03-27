@@ -1,0 +1,56 @@
+// import internal partials
+@import "./typography";
+@import "./color";
+@import "./image";
+@import "./btn";
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html,
+body {
+  font-family: $font;
+  font-weight: 400;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+section {
+  padding: 80px 0;
+}
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  font-family: $font;
+}
+section .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: $dark-color;
+  transform: translateX(-50%);
+}
+section .title::after {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  font-size: 20px;
+  color: $primary-color;
+  padding: 0 5px;
+  background: $white-color;
+  transform: translateX(-50%);
+}
